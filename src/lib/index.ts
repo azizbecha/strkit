@@ -8,3 +8,4 @@ export * from "./isURL";
 export * from "./maskEmail";
 export * from "./removeSpaces";
 export * from "./reverse";
+export * from "./truncate";
