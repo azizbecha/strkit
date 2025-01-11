@@ -1,0 +1,28 @@
+{
+  "name": "strkit",
+  "version": "1.0.0",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "scripts": {
+    "build": "npm run generate-barrels && tsc",
+    "generate-barrels": "barrelsby --directory src/lib --delete",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prepare": "husky && husky install"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/azizbecha/strkit.git"
+  },
+  "author": "Aziz Becha",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/azizbecha/strkit/issues"
+  },
+  "homepage": "https://github.com/azizbecha/strkit#readme",
+  "description": "",
+  "devDependencies": {
+    "barrelsby": "^2.8.1",
+    "husky": "^8.0.0",
+    "typescript": "^5.7.3"
+  }
+}
