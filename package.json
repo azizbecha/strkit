@@ -1,5 +1,5 @@
 {
-  "name": "strkit",
+  "name": "@azizbecha/strkit",
   "version": "1.0.0",
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
@@ -69,7 +69,7 @@
     "url": "https://github.com/azizbecha/strkit/issues"
   },
   "homepage": "https://github.com/azizbecha/strkit#readme",
-  "description": "",
+  "description": "strkit is a utility library offering a collection of essential string functions including validation, case conversion, truncation, and more. Ideal for both JavaScript and TypeScript developers to simplify string operations in their applications.",
   "devDependencies": {
     "barrelsby": "^2.8.1",
     "husky": "^8.0.0",

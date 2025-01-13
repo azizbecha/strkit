@@ -19,7 +19,7 @@
 You can install `strkit` as an NPM package:
 
 ```bash
-npm install strkit
+npm install @azizbecha/strkit
 ```
 
 ---
@@ -29,7 +29,7 @@ npm install strkit
 ### CommonJS
 
 ```javascript
-const { isEmail, truncate } = require('strkit');
+const { isEmail, truncate } = require('@azizbecha/strkit');
 
 console.log(isEmail('test@example.com')); // true
 console.log(truncate('This is a very long string', 10)); // 'This is a...'
@@ -38,7 +38,7 @@ console.log(truncate('This is a very long string', 10)); // 'This is a...'
 ### ES6
 
 ```javascript
-import { isEmail, truncate } from 'strkit';
+import { isEmail, truncate } from '@azizbecha/strkit';
 
 console.log(isEmail('test@example.com')); // true
 console.log(truncate('This is a very long string', 10)); // 'This is a...'
