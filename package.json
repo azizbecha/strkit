@@ -1,6 +1,6 @@
 {
   "name": "@azizbecha/strkit",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
   "scripts": {
@@ -13,6 +13,12 @@
     "type": "git",
     "url": "git+https://github.com/azizbecha/strkit.git"
   },
+  "files": [
+    "dist",
+    "src",
+    "LICENSE",
+    "README.md"
+  ],
   "keywords": [
     "string",
     "utilities",
