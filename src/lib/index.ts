@@ -9,5 +9,6 @@ export * from "./isURL";
 export * from "./maskEmail";
 export * from "./removeSpaces";
 export * from "./reverse";
-export * from "./truncate";
+export * from "./toCamelCase";
 export * from "./toSlug";
+export * from "./truncate";
