@@ -3,6 +3,7 @@
  */
 
 export * from "./capitalize";
+export * from "./countWords";
 export * from "./isEmail";
 export * from "./isURL";
 export * from "./maskEmail";
