@@ -10,3 +10,4 @@ export * from "./maskEmail";
 export * from "./removeSpaces";
 export * from "./reverse";
 export * from "./truncate";
+export * from "./toSlug";
