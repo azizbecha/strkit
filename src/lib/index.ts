@@ -3,9 +3,13 @@
  */
 
 export * from "./capitalize";
+export * from "./countWords";
+export * from "./diffStrings";
 export * from "./isEmail";
 export * from "./isURL";
 export * from "./maskEmail";
 export * from "./removeSpaces";
 export * from "./reverse";
+export * from "./toCamelCase";
+export * from "./toSlug";
 export * from "./truncate";
