@@ -14,6 +14,7 @@ export * from "./isEmail";
 export * from "./isPalindrome";
 export * from "./isURL";
 export * from "./maskEmail";
+export * from "./readingTime";
 export * from "./removeSpaces";
 export * from "./reverse";
 export * from "./toCamelCase";
