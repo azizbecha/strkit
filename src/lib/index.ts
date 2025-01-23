@@ -8,6 +8,7 @@ export * from "./countWordsMatching";
 export * from "./decodeURL";
 export * from "./diffStrings";
 export * from "./encodeURL";
+export * from "./endsWith";
 export * from "./extractHashtags";
 export * from "./extractMentions";
 export * from "./generateId";
