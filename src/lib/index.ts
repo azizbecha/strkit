@@ -26,6 +26,7 @@ export * from "./maskEmail";
 export * from "./readingTime";
 export * from "./removeSpaces";
 export * from "./reverse";
+export * from "./startsWith";
 export * from "./toCamelCase";
 export * from "./toOrdinal";
 export * from "./toSlug";
