@@ -14,6 +14,7 @@ export * from "./generateId";
 export * from "./invertCase";
 export * from "./isAnagram";
 export * from "./isEmail";
+export * from "./isIPv4Address";
 export * from "./isPalindrome";
 export * from "./isURL";
 export * from "./maskEmail";
