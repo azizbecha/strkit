@@ -8,6 +8,7 @@ export * from "./countWordsMatching";
 export * from "./decodeURL";
 export * from "./diffStrings";
 export * from "./encodeURL";
+export * from "./generateId";
 export * from "./invertCase";
 export * from "./isAnagram";
 export * from "./isEmail";
