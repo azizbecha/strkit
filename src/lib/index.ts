@@ -21,3 +21,4 @@ export * from "./reverse";
 export * from "./toCamelCase";
 export * from "./toSlug";
 export * from "./truncate";
+export * from "./truncateMiddle";
