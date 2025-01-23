@@ -9,6 +9,7 @@ export * from "./decodeURL";
 export * from "./diffStrings";
 export * from "./encodeURL";
 export * from "./extractHashtags";
+export * from "./extractMentions";
 export * from "./generateId";
 export * from "./invertCase";
 export * from "./isAnagram";
