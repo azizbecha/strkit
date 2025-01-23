@@ -14,6 +14,7 @@ export * from "./extractMentions";
 export * from "./generateId";
 export * from "./invertCase";
 export * from "./isAnagram";
+export * from "./isBoolean";
 export * from "./isBtcAddress";
 export * from "./isCreditCard";
 export * from "./isEmail";
