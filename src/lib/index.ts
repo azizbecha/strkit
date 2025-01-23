@@ -19,6 +19,7 @@ export * from "./isEmail";
 export * from "./isEmoji";
 export * from "./isIPv4Address";
 export * from "./isIPv6Address";
+export * from "./isJWT";
 export * from "./isPalindrome";
 export * from "./isURL";
 export * from "./maskEmail";
