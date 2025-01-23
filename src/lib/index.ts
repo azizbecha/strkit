@@ -3,6 +3,7 @@
  */
 
 export * from "./capitalize";
+export * from "./compareVersion";
 export * from "./countWords";
 export * from "./countWordsMatching";
 export * from "./decodeURL";
