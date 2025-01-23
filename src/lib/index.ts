@@ -13,6 +13,7 @@ export * from "./extractMentions";
 export * from "./generateId";
 export * from "./invertCase";
 export * from "./isAnagram";
+export * from "./isBtcAddress";
 export * from "./isCreditCard";
 export * from "./isEmail";
 export * from "./isEmoji";
