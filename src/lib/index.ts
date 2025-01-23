@@ -15,6 +15,7 @@ export * from "./invertCase";
 export * from "./isAnagram";
 export * from "./isCreditCard";
 export * from "./isEmail";
+export * from "./isEmoji";
 export * from "./isIPv4Address";
 export * from "./isIPv6Address";
 export * from "./isPalindrome";
