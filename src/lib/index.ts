@@ -19,6 +19,7 @@ export * from "./readingTime";
 export * from "./removeSpaces";
 export * from "./reverse";
 export * from "./toCamelCase";
+export * from "./toOrdinal";
 export * from "./toSlug";
 export * from "./truncate";
 export * from "./truncateMiddle";
