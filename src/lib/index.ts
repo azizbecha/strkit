@@ -11,6 +11,7 @@ export * from "./encodeURL";
 export * from "./endsWith";
 export * from "./extractHashtags";
 export * from "./extractMentions";
+export * from "./formatNumber";
 export * from "./generateId";
 export * from "./invertCase";
 export * from "./isAnagram";
