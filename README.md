@@ -3,7 +3,7 @@
   <img src="https://img.shields.io/npm/v/@azizbecha/strkit" alt="npm version">
   <img src="https://img.shields.io/npm/dt/@azizbecha/strkit" alt="npm downloads">
   <img src="https://img.shields.io/badge/license-MIT-blue" alt="License">
-  <img src="https://img.shields.io/github/last-commit/azizbecha/strkit-" alt="GitHub last commit">
+  <img src="https://img.shields.io/github/last-commit/azizbecha/strkit" alt="GitHub last commit">
   <img src="https://img.shields.io/github/stars/azizbecha/strkit" alt="GitHub stars">
   <img src="https://img.shields.io/github/issues/azizbecha/strkit" alt="GitHub issues">
 </p>
