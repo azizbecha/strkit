@@ -33,6 +33,7 @@ export * from "./maskEmail";
 export * from "./readingTime";
 export * from "./removeSpaces";
 export * from "./reverse";
+export * from "./roundTo";
 export * from "./startsWith";
 export * from "./toCamelCase";
 export * from "./toDegrees";
