@@ -30,6 +30,7 @@ export * from "./isJWT";
 export * from "./isPalindrome";
 export * from "./isURL";
 export * from "./maskEmail";
+export * from "./randomBetween";
 export * from "./readingTime";
 export * from "./removeSpaces";
 export * from "./reverse";
