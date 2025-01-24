@@ -34,6 +34,7 @@ export * from "./removeSpaces";
 export * from "./reverse";
 export * from "./startsWith";
 export * from "./toCamelCase";
+export * from "./toDegrees";
 export * from "./toOrdinal";
 export * from "./toRadians";
 export * from "./toSlug";
