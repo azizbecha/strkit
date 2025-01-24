@@ -1,4 +1,12 @@
-# strkit
+<h1 align="center">strkit</h1>
+<p align="center">
+  <img src="https://img.shields.io/npm/v/@azizbecha/strkit" alt="npm version">
+  <img src="https://img.shields.io/npm/dt/@azizbecha/strkit" alt="npm downloads">
+  <img src="https://img.shields.io/badge/license-MIT-blue" alt="License">
+  <img src="https://img.shields.io/github/last-commit/azizbecha/strkit-" alt="GitHub last commit">
+  <img src="https://img.shields.io/github/stars/azizbecha/strkit" alt="GitHub stars">
+  <img src="https://img.shields.io/github/issues/azizbecha/strkit" alt="GitHub issues">
+</p>
 
 `strkit` is a utility library that provides a collection of commonly used string functions in JavaScript/TypeScript. Whether you need to validate emails, convert case styles, trim spaces, or manipulate strings in other ways, `strkit` has got you covered. The goal of this library is to make string handling easier and more efficient across all your projects.
 
