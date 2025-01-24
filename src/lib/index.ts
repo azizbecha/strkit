@@ -34,6 +34,7 @@ export * from "./reverse";
 export * from "./startsWith";
 export * from "./toCamelCase";
 export * from "./toOrdinal";
+export * from "./toRadians";
 export * from "./toSlug";
 export * from "./truncate";
 export * from "./truncateMiddle";
