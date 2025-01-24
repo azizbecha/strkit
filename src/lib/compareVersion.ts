@@ -7,6 +7,10 @@
  * @param v1 The first version string (e.g., "1.2.3").
  * @param v2 The second version string (e.g., "1.2.4").
  * @returns 0 if both versions are equal, 1 if v1 > v2, -1 if v2 > v1.
+ * @example
+ * compareVersion("1.2.3", "1.2.4"); // returns -1
+ * compareVersion("1.2.3", "1.2.3"); // returns 0
+ * compareVersion("1.2.4", "1.2.3"); // returns 1
  */
 export function compareVersion(v1: string, v2: string): number {
   const v1Parts = v1.split(".").map(Number); // Split version into parts and convert to numbers.

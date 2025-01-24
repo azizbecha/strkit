@@ -4,6 +4,8 @@
  * @param degrees - The angle in degrees (number or numeric string).
  * @returns The angle in radians.
  * @throws Error if the input is not a valid number.
+ * @example
+ * toRadians(180); // Output: 3.14159...
  */
 export function toRadians(degrees: number | string): number {
   const parsedDegrees =

@@ -3,6 +3,9 @@
  * @param point1 - First geographic coordinate with `lat` and `lon` properties.
  * @param point2 - Second geographic coordinate with `lat` and `lon` properties.
  * @returns The distance between the two coordinates in kilometers.
+ * 
+ * @example
+ * getDistanceBetweenPoints({ lat: 51.5074, lon: 0.1278 }, { lat: 48.8566, lon: 2.3522 }); // 343.5
  */
 export function getDistanceBetweenPoints(
   point1: { lat: number; lon: number },
