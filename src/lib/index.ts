@@ -14,6 +14,7 @@ export * from "./extractHashtags";
 export * from "./extractMentions";
 export * from "./formatNumber";
 export * from "./generateId";
+export * from "./getDistanceBetweenPoints";
 export * from "./invertCase";
 export * from "./isAnagram";
 export * from "./isBoolean";
