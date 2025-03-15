@@ -8,7 +8,7 @@
  * roundTo(1.6789, 0); // 2
  * roundTo(123.456, 1); // 123.5
  */
-export function roundTo(num: number, decimalPlaces: number = 0): number {
+export default function roundTo(num: number, decimalPlaces: number = 0): number {
   const factor = 10 ** decimalPlaces;
   return Math.round(num * factor) / factor;
 }

@@ -9,7 +9,7 @@
  * isIPv6Address("::1"); // Output: true
  * isIPv6Address("not-an-ipv6"); // Output: false
  */
-export function isIPv6Address(str: string): boolean {
+export default function isIPv6Address(str: string): boolean {
   const ipv6Regex =
     /^(?:[0-9a-fA-F]{1,4}:){7}[0-9a-fA-F]{1,4}$|^::(?:[0-9a-fA-F]{1,4}:){0,7}[0-9a-fA-F]{1,4}$|^(?:[0-9a-fA-F]{1,4}:){1,7}:$/;
   return ipv6Regex.test(str);

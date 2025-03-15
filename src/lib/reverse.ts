@@ -12,6 +12,6 @@
  * reverse('12345'); // "54321"
  */
 
-export function reverse(str: string): string {
-  return str.split("").reverse().join("");
+export default function reverse(str: string): string {
+  return str.split('').reverse().join('');
 }

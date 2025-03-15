@@ -9,6 +9,6 @@
  * startsWith("hello world", "hello"); // Output: true
  * startsWith("hello world", "world"); // Output: false
  */
-export function startsWith(str: string, prefix: string): boolean {
+export default function startsWith(str: string, prefix: string): boolean {
   return str.indexOf(prefix) === 0;
 }

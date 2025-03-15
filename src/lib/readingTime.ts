@@ -14,7 +14,7 @@
  * readingTime("Lorem ipsum dolor sit amet, consectetur adipiscing elit.", 250);
  * // Output: { minutes: 0, seconds: 2 }
  */
-export function readingTime(
+export default function readingTime(
   text: string,
   wordsPerMinute: number = 200
 ): { minutes: number; seconds: number } {

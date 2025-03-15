@@ -8,6 +8,6 @@
  * countWords('Hello world'); // 2
  * countWords('This   is   a   test'); // 4
  */
-export function countWords(str: string): number {
+export default function countWords(str: string): number {
     return str.trim().split(/\s+/).length;
 }

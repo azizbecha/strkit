@@ -1,15 +1,15 @@
 {
   "compilerOptions": {
-    "target": "es2016",                  // Compatibility with older JS environments
-    "module": "CommonJS",             // Node.js module system
-    "declaration": true,              // Generate .d.ts files for TypeScript types
-    "outDir": "./dist",               // Output directory for compiled files
-    "strict": true,                   // Enable strict type checking
-    "esModuleInterop": true,          // Better ES module compatibility
-    "moduleResolution": "Node",       // Resolve Node.js-style modules
-    "sourceMap": true,                // Include source maps for debugging
-    "skipLibCheck": true              // Skip type checking for libraries
+    "target": "ES2016",
+    "declaration": true,
+    "outDir": "./dist",
+    "rootDir": "./src",
+    "strict": true,
+    "sourceMap": true,
+    "esModuleInterop": true,
+    "moduleResolution": "Node",
   },
-  "include": ["src/**/*"],            // Include all TypeScript files in src/
-  "exclude": ["node_modules", "dist"] // Exclude dependencies and output
+  "include": ["src/**/*"],
+  "exclude": ["node_modules", "dist"]
 }
+

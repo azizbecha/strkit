@@ -7,13 +7,13 @@
  * @example
  * toRadians(180); // Output: 3.14159...
  */
-export function toRadians(degrees: number | string): number {
+export default function toRadians(degrees: number | string): number {
   const parsedDegrees =
-    typeof degrees === "string" ? parseFloat(degrees) : degrees;
+    typeof degrees === 'string' ? parseFloat(degrees) : degrees;
 
   if (isNaN(parsedDegrees)) {
     throw new Error(
-      "Invalid input: degrees must be a number or a numeric string."
+      'Invalid input: degrees must be a number or a numeric string.'
     );
   }
 

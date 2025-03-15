@@ -6,7 +6,7 @@
  * toDegrees(Math.PI); // 180
  * toDegrees('1.5708'); // 90
  */
-export function toDegrees(radians: number | string): number {
-  const rad = typeof radians === "string" ? parseFloat(radians) : radians;
+export default function toDegrees(radians: number | string): number {
+  const rad = typeof radians === 'string' ? parseFloat(radians) : radians;
   return rad * (180 / Math.PI);
 }

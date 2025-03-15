@@ -9,9 +9,9 @@
  * isCreditCard("1234567812345670"); // Output: false
  * isCreditCard("not-a-credit-card"); // Output: false
  */
-export function isCreditCard(str: string): boolean {
+export default function isCreditCard(str: string): boolean {
   // Remove non-numeric characters
-  const cleaned = str.replace(/\D/g, "");
+  const cleaned = str.replace(/\D/g, '');
 
   // Check if the string contains only digits and has a valid length
   if (!/^\d{13,19}$/.test(cleaned)) {

@@ -12,7 +12,7 @@
  * isEmail('not-an-email'); // false
  */
 
-export function isEmail(email: string): boolean {
+export default function isEmail(email: string): boolean {
   const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
   return emailRegex.test(email);
 }

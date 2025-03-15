@@ -9,7 +9,7 @@
  * extractMentions("No mentions here!"); // Output: []
  * extractMentions("@admin please check this."); // Output: ["@admin"]
  */
-export function extractMentions(str: string): string[] {
+export default function extractMentions(str: string): string[] {
   const mentionRegex = /@\w+/g;
   const matches = str.match(mentionRegex);
   return matches ? matches : [];

@@ -12,16 +12,16 @@
  * maskEmail('johndoe@gmail.com'); // "j******@gmail.com"
  */
 
-export function maskEmail(email: string): string {
-  if (!email.includes("@")) {
-    throw new Error("Invalid email format");
+export default function maskEmail(email: string): string {
+  if (!email.includes('@')) {
+    throw new Error('Invalid email format');
   }
 
-  const [username, domain] = email.split("@");
+  const [username, domain] = email.split('@');
   if (username.length < 2) {
-    throw new Error("Email username must have at least two characters");
+    throw new Error('Email username must have at least two characters');
   }
 
-  const maskedUsername = username.charAt(0) + "*".repeat(username.length - 1);
+  const maskedUsername = username.charAt(0) + '*'.repeat(username.length - 1);
   return `${maskedUsername}@${domain}`;
 }

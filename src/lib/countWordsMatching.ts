@@ -13,7 +13,7 @@
  * // Using a string to count exact matches
  * countWordsMatching("apple banana apple apricot", "apple"); // 2
  */
-export function countWordsMatching(
+export default function countWordsMatching(
   text: string,
   pattern: RegExp | string
 ): number {
@@ -22,7 +22,7 @@ export function countWordsMatching(
 
   // Convert string pattern to RegExp if necessary
   const regex =
-    typeof pattern === "string" ? new RegExp(`^${pattern}$`) : pattern;
+    typeof pattern === 'string' ? new RegExp(`^${pattern}$`) : pattern;
 
   // Count words matching the pattern
   return words.filter((word) => regex.test(word)).length;

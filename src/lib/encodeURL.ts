@@ -9,6 +9,6 @@
  * encodeURL("https://example.com/query?name=John Doe&age=25");
  * // Output: "https://example.com/query?name=John%20Doe&age=25"
  */
-export function encodeURL(url: string): string {
+export default function encodeURL(url: string): string {
   return encodeURIComponent(url);
 }

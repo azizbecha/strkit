@@ -12,7 +12,7 @@
  * isURL('not-a-url'); // false
  */
 
-export function isURL(url: string): boolean {
+export default function isURL(url: string): boolean {
   try {
     new URL(url);
     return true;

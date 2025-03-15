@@ -11,18 +11,18 @@
  * toOrdinal(11); // Output: "11th"
  * toOrdinal(101); // Output: "101st"
  */
-export function toOrdinal(num: number): string {
+export default function toOrdinal(num: number): string {
   const absNum = Math.abs(num);
   const suffix =
     absNum % 100 >= 11 && absNum % 100 <= 13
-      ? "th"
+      ? 'th'
       : absNum % 10 === 1
-      ? "st"
+      ? 'st'
       : absNum % 10 === 2
-      ? "nd"
+      ? 'nd'
       : absNum % 10 === 3
-      ? "rd"
-      : "th";
+      ? 'rd'
+      : 'th';
 
   return `${num}${suffix}`;
 }

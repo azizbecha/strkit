@@ -8,11 +8,11 @@
  * toSlug('Hello World!'); // "hello-world"
  * toSlug('This is a TEST'); // "this-is-a-test"
  */
-export function toSlug(str: string): string {
+export default function toSlug(str: string): string {
     return str
       .toLowerCase()
     .trim()
-    .replace(/[^\w\s-]/g, "") // Remove special characters
-    .replace(/\s+/g, "-") // Replace spaces with -
-    .replace(/-+/g, "-"); // Replace multiple - with single -
+    .replace(/[^\w\s-]/g, '') // Remove special characters
+    .replace(/\s+/g, '-') // Replace spaces with -
+    .replace(/-+/g, '-'); // Replace multiple - with single -
 }

@@ -8,8 +8,8 @@
  * toCamelCase('hello world'); // "helloWorld"
  * toCamelCase('This-is-a-test'); // "thisIsATest"
  */
-export function toCamelCase(str: string): string {
+export default function toCamelCase(str: string): string {
     return str
       .toLowerCase()
-    .replace(/[-_\s]+(.)?/g, (_, c) => c ? c.toUpperCase() : "");
+    .replace(/[-_\s]+(.)?/g, (_, c) => c ? c.toUpperCase() : '');
 }

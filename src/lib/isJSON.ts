@@ -9,11 +9,11 @@
  * isJSON('{name: John, age: 30}'); // Output: false
  * isJSON('random string'); // Output: false
  */
-export function isJSON(str: string): boolean {
+export default function isJSON(str: string): boolean {
   try {
     JSON.parse(str);
     return true;
-  } catch (e) {
+  } catch {
     return false;
   }
 }

@@ -7,7 +7,7 @@
  * @example
  * getDistanceBetweenPoints({ lat: 51.5074, lon: 0.1278 }, { lat: 48.8566, lon: 2.3522 }); // 343.5
  */
-export function getDistanceBetweenPoints(
+export default function getDistanceBetweenPoints(
   point1: { lat: number; lon: number },
   point2: { lat: number; lon: number }
 ): number {

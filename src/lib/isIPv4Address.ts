@@ -9,7 +9,7 @@
  * isIPv4Address("256.256.256.256"); // Output: false
  * isIPv4Address("not-an-ip"); // Output: false
  */
-export function isIPv4Address(str: string): boolean {
+export default function isIPv4Address(str: string): boolean {
   const ipv4Regex =
     /^(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)$/;
   return ipv4Regex.test(str);

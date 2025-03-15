@@ -13,7 +13,7 @@ export interface StringDiff {
     value: string;
   }
   
-  export function diffStrings(str1: string, str2: string): StringDiff[] {
+  export default function diffStrings(str1: string, str2: string): StringDiff[] {
     const diff: StringDiff[] = [];
     let i = 0;
     let j = 0;

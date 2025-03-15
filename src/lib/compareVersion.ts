@@ -12,9 +12,9 @@
  * compareVersion("1.2.3", "1.2.3"); // returns 0
  * compareVersion("1.2.4", "1.2.3"); // returns 1
  */
-export function compareVersion(v1: string, v2: string): number {
-  const v1Parts = v1.split(".").map(Number); // Split version into parts and convert to numbers.
-  const v2Parts = v2.split(".").map(Number); // Do the same for v2.
+export default function compareVersion(v1: string, v2: string): number {
+  const v1Parts = v1.split('.').map(Number); // Split version into parts and convert to numbers.
+  const v2Parts = v2.split('.').map(Number); // Do the same for v2.
 
   // Pad the shorter version with zeroes to make them the same length.
   const length = Math.max(v1Parts.length, v2Parts.length);

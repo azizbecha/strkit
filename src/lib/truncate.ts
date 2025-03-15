@@ -15,13 +15,13 @@
  * truncate('Short', 10); // "Short" (no truncation)
  * truncate('A very long string that needs truncating', undefined); // "A very long string that needs trunc..."
  */
-export function truncate(
+export default function truncate(
   str: string,
   maxLength: number = 50,
-  suffix: string = "..."
+  suffix: string = '...'
 ): string {
   if (maxLength <= 0) {
-    throw new Error("maxLength must be greater than 0");
+    throw new Error('maxLength must be greater than 0');
   }
 
   if (str.length <= maxLength) {
@@ -30,7 +30,7 @@ export function truncate(
 
   const truncatedLength = maxLength - suffix.length;
   if (truncatedLength <= 0) {
-    throw new Error("maxLength is too short to include the suffix");
+    throw new Error('maxLength is too short to include the suffix');
   }
 
   return str.slice(0, truncatedLength) + suffix;

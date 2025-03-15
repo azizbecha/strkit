@@ -11,15 +11,15 @@
  * isAnagram("listen", "silent"); // Output: true
  * isAnagram("hello", "world"); // Output: false
  */
-export function isAnagram(str1: string, str2: string): boolean {
+export default function isAnagram(str1: string, str2: string): boolean {
   // Helper function to sort and normalize the string
   const normalize = (str: string): string =>
     str
-      .replace(/[^a-zA-Z0-9]/g, "")
+      .replace(/[^a-zA-Z0-9]/g, '')
       .toLowerCase()
-      .split("")
+      .split('')
       .sort()
-      .join("");
+      .join('');
 
   // Compare the normalized versions of the strings
   return normalize(str1) === normalize(str2);

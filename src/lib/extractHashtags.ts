@@ -9,7 +9,7 @@
  * extractHashtags("No hashtags here!"); // Output: []
  * extractHashtags("#100DaysOfCode is trending!"); // Output: ["#100DaysOfCode"]
  */
-export function extractHashtags(str: string): string[] {
+export default function extractHashtags(str: string): string[] {
   const hashtagRegex = /#\w+/g;
   const matches = str.match(hashtagRegex);
   return matches ? matches : [];

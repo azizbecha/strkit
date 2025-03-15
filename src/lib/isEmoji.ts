@@ -9,7 +9,7 @@
  * isEmoji("hello"); // Output: false
  * isEmoji("👋 hello!"); // Output: true
  */
-export function isEmoji(str: string): boolean {
+export default function isEmoji(str: string): boolean {
   // Emoji regex pattern (matches most emojis)
   const emojiRegex = /[\p{Emoji}\u200d\u20e3\u25aa\u2b06\ufe0f]/gu;
 

@@ -18,9 +18,8 @@
  * isBoolean("no"); // Output: true
  * isBoolean("random"); // Output: false
  */
-export function isBoolean(value: any): boolean {
-  const truthyValues = ["true", "yes", "1", true];
-  const falsyValues = ["false", "no", "0", false];
-
+export default function isBoolean(value: string | number | boolean): boolean {
+  const truthyValues = ['true', 'yes', '1', 1, true];
+  const falsyValues = ['false', 'no', '0', 0, false];
   return truthyValues.includes(value) || falsyValues.includes(value);
 }

@@ -1,0 +1,9 @@
+{
+  "directory": ["src/lib"],
+  "name": "index.ts",
+  "delete": true,
+  "mode": "named-export",
+  "exportDefault": true,
+  "singleQuotes": true,
+  "structure": "flat"
+}

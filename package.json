@@ -1,13 +1,19 @@
 {
   "name": "@azizbecha/strkit",
   "version": "1.0.3",
-  "main": "./dist/index.js",
-  "types": "./dist/index.d.ts",
+  "main": "dist/cjs/index.js",
+  "module": "dist/es/index.js",
+  "types": "dist/types/index.d.ts",
+  "browser": "dist/umd/strkit.min.js",
   "scripts": {
-    "build": "npm run generate-barrels && tsc",
+    "lint": "npx eslint . --ext .js,.ts --fix --ignore-pattern dist/",
+    "generate-index": "node generate-index.js",
+    "build:cjs": "tsc --module commonjs --outDir dist/cjs",
+    "build:es": "tsc --module esnext --outDir dist/es",
+    "build:umd": "tsc --module umd --outDir dist/umd && rollup dist/umd/index.js --file dist/umd/strkit.min.js --format umd --name strkit --plugin @rollup/plugin-terser",
+    "build": "npm run lint && npm run generate-index && npm run build:cjs && npm run build:es && npm run build:umd",
     "generate-barrels": "barrelsby --directory src/lib --delete",
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "prepare": "husky && husky install"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
@@ -18,6 +24,12 @@
     "LICENSE",
     "README.md"
   ],
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm run lint && npm run build",
+      "post-commit": "git push origin HEAD"
+    }
+  },
   "keywords": [
     "string",
     "utilities",
@@ -76,8 +88,16 @@
   "homepage": "https://github.com/azizbecha/strkit#readme",
   "description": "strkit is a utility library offering a collection of essential string functions including validation, case conversion, truncation, and more. Ideal for both JavaScript and TypeScript developers to simplify string operations in their applications.",
   "devDependencies": {
+    "@rollup/plugin-terser": "^0.4.0",
+    "@typescript-eslint/eslint-plugin": "^8.26.1",
+    "@typescript-eslint/parser": "^8.26.1",
     "barrelsby": "^2.8.1",
+    "eslint": "^9.22.0",
+    "eslint-config-prettier": "^10.1.1",
+    "globals": "^16.0.0",
     "husky": "^8.0.0",
+    "prettier": "^3.5.3",
+    "rollup": "^3.0.0",
     "typescript": "^5.7.3"
   }
 }

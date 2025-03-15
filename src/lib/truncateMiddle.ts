@@ -9,7 +9,7 @@
  * truncateMiddle("HelloWorld", 5); // Output: "He...ld"
  * truncateMiddle("JavaScript", 15); // Output: "JavaScript" (unchanged)
  */
-export function truncateMiddle(str: string, maxLength: number = 10): string {
+export default function truncateMiddle(str: string, maxLength: number = 10): string {
   if (str.length <= maxLength) {
     return str;
   }

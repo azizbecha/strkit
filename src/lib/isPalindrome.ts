@@ -10,10 +10,10 @@
  * isPalindrome("A man, a plan, a canal: Panama"); // Output: true
  * isPalindrome("hello"); // Output: false
  */
-export function isPalindrome(str: string): boolean {
+export default function isPalindrome(str: string): boolean {
   // Normalize the string: remove non-alphanumeric characters, convert to lowercase
-  const normalized = str.replace(/[^a-zA-Z0-9]/g, "").toLowerCase();
+  const normalized = str.replace(/[^a-zA-Z0-9]/g, '').toLowerCase();
 
   // Compare the normalized string to its reverse
-  return normalized === normalized.split("").reverse().join("");
+  return normalized === normalized.split('').reverse().join('');
 }

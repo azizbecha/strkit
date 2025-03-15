@@ -8,7 +8,7 @@
  * isJWT("eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjoiYWRtaW4iLCJpYXQiOjE1MTYyMzkwMjJ9.ZCXogGoSbb6dpzqSfrYtM4qvHmiim3g3b6pO5nQksjc"); // Output: true
  * isJWT("not-a-jwt-token"); // Output: false
  */
-export function isJWT(token: string): boolean {
+export default function isJWT(token: string): boolean {
   // Regular expression to validate JWT structure
   const jwtRegex = /^[A-Za-z0-9-_]+\.[A-Za-z0-9-_]+\.[A-Za-z0-9-_]+$/;
 

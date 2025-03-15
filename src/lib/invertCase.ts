@@ -14,9 +14,9 @@
  * // Handle mixed case and non-alphabetical characters
  * invertCase("123aBc#"); // "123AbC#"
  */
-export function invertCase(input: string): string {
+export default function invertCase(input: string): string {
   return input
-    .split("")
+    .split('')
     .map((char) => {
       if (char === char.toLowerCase()) {
         return char.toUpperCase();
@@ -24,5 +24,5 @@ export function invertCase(input: string): string {
         return char.toLowerCase();
       }
     })
-    .join("");
+    .join('');
 }

@@ -9,6 +9,6 @@
  * endsWith("hello world", "world"); // Output: true
  * endsWith("hello world", "hello"); // Output: false
  */
-export function endsWith(str: string, suffix: string): boolean {
+export default function endsWith(str: string, suffix: string): boolean {
   return str.lastIndexOf(suffix) === str.length - suffix.length;
 }
