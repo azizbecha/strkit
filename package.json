@@ -1,6 +1,6 @@
 {
   "name": "@azizbecha/strkit",
-  "version": "1.0.3",
+  "version": "1.1.1",
   "main": "dist/cjs/index.js",
   "module": "dist/es/index.js",
   "types": "dist/types/index.d.ts",
@@ -15,12 +15,24 @@
     "generate-barrels": "barrelsby --directory src/lib --delete",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "exports": {
+    ".": {
+      "import": "./dist/es/index.js",
+      "require": "./dist/cjs/index.js",
+      "default": "./dist/es/index.js"
+    },
+    "./*": "./es/lib/*.js"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/azizbecha/strkit.git"
   },
   "files": [
     "dist",
+    "dist/cjs",
+    "dist/es",
+    "dist/umd",
+    "dist/types",
     "LICENSE",
     "README.md"
   ],

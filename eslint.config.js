@@ -1,8 +1,9 @@
-const tseslint = require('@typescript-eslint/eslint-plugin');
-const tsParser = require('@typescript-eslint/parser');
-const prettierConfig = require('eslint-config-prettier');
-const globals = require('globals');
-module.exports = [
+import tseslint from '@typescript-eslint/eslint-plugin';
+import tsParser from '@typescript-eslint/parser';
+import prettierConfig from 'eslint-config-prettier';
+import globals from 'globals';
+
+export default [
   {
     files: ['src/**/*.js', 'src/**/*.ts'],
     ignores: ['dist/**'],

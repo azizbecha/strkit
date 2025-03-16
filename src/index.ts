@@ -85,5 +85,4 @@ const strkit = {
 };
 
 export default strkit;
-
-export * from './lib';
+export { capitalize, clamp, compareVersion, countWords, countWordsMatching, decodeURL, diffStrings, encodeURL, endsWith, extractHashtags, extractMentions, formatNumber, generateId, getDistanceBetweenPoints, invertCase, isAnagram, isBoolean, isBtcAddress, isCreditCard, isEmail, isEmoji, isIPv4Address, isIPv6Address, isJSON, isJWT, isPalindrome, isURL, maskEmail, randomBetween, readingTime, removeSpaces, reverse, roundTo, startsWith, toCamelCase, toDegrees, toOrdinal, toRadians, toSlug, truncate, truncateMiddle };

@@ -45,10 +45,10 @@ console.log(truncate("This is a very long string", 10)); // 'This is a...'
 ### ES6
 
 ```javascript
-import { isEmail, truncate } from "@azizbecha/strkit";
+import strkit, { isEmail } from "@azizbecha/strkit";
 
 console.log(isEmail("test@example.com")); // true
-console.log(truncate("This is a very long string", 10)); // 'This is a...'
+console.log(strkit.truncate("This is a very long string", 10)); // 'This is a...'
 ```
 
 ---
